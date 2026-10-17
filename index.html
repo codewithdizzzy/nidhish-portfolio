@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Nidhish | Developer Portfolio</title>
+  <meta name="title" content="Nidhish | Developer Portfolio">
+  <meta name="description" content="Explore Nidhish's developer portfolio, technical skills, projects, and journey in software development. BCA student preparing for software development internships.">
+  <meta name="keywords" content="Nidhish, Developer Portfolio, BCA Student, Software Developer, Python, Java, JavaScript, Frontend, Web Development">
+  <meta name="author" content="Nidhish">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090a0f">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-portfolio-url.vercel.app/">
+  <meta property="og:title" content="Nidhish | Developer Portfolio">
+  <meta property="og:description" content="Explore Nidhish's developer portfolio, technical skills, projects, and journey in software development.">
+  <meta property="og:image" content="https://your-portfolio-url.vercel.app/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://your-portfolio-url.vercel.app/">
+  <meta property="twitter:title" content="Nidhish | Developer Portfolio">
+  <meta property="twitter:description" content="Explore Nidhish's developer portfolio, technical skills, projects, and journey in software development.">
+  <meta property="twitter:image" content="https://your-portfolio-url.vercel.app/og-image.png">
+
+  <!-- Favicon (Inline SVG Data URI for instant zero-dependency display) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f111a'/><text x='50%' y='58%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='46' fill='%238b5cf6'>N</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono with fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================
+       NAVIGATION BAR
+       ======================================================== -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-container">
+      <!-- Clickable Logo -->
+      <a href="#home" class="logo" aria-label="Nidhish Developer Portfolio Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">NIDHISH</span>
+        <span class="logo-accent">.DEV</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Hamburger Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">Connect</a>
+        
+        <button type="button" 
+                class="mobile-menu-toggle" 
+                id="mobileMenuToggle" 
+                aria-expanded="false" 
+                aria-controls="mobileMenu" 
+                aria-label="Toggle navigation menu">
+          <span class="hamburger-bar bar-top"></span>
+          <span class="hamburger-bar bar-middle"></span>
+          <span class="hamburger-bar bar-bottom"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="nav-mobile" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="#home" class="mobile-nav-link active"><span>01.</span> Home</a></li>
+          <li><a href="#about" class="mobile-nav-link"><span>02.</span> About</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><span>03.</span> Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><span>04.</span> Projects</a></li>
+          <li><a href="#education" class="mobile-nav-link"><span>05.</span> Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span>06.</span> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <a href="#contact" class="btn btn-primary btn-block mobile-cta">Get In Touch</a>
+          <div class="mobile-socials">
+            <!-- GitHub Placeholder -->
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <!-- LinkedIn Placeholder -->
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <!-- Email Placeholder -->
+            <a href="mailto:your.email@example.com" class="social-icon-link" aria-label="Email Me">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       MAIN CONTENT CONTAINER
+       ======================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================
+         SECTION 1: HERO
+         ====================================================== -->
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      <!-- Subtle Decorative Background Glow Elements -->
+      <div class="bg-glow bg-glow-purple" aria-hidden="true"></div>
+      <div class="bg-glow bg-glow-blue" aria-hidden="true"></div>
+      <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Left / Content Column -->
+        <div class="hero-content reveal-item">
+          <!-- Availability / Opportunity Badge -->
+          <div class="hero-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="badge-text">Seeking Software Development Internships</span>
+          </div>
+
+          <!-- Small Intro Label -->
+          <p class="hero-label">HELLO, WORLD! I'M</p>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title" id="hero-title">
+            Hi, I'm <span class="gradient-text">Nidhish.</span>
+          </h1>
+
+          <!-- Supporting Headline -->
+          <h2 class="hero-subtitle">
+            Building digital experiences, one project at a time.
+          </h2>
+
+          <!-- Description -->
+          <p class="hero-description">
+            I'm a BCA student passionate about programming, software development, and emerging technologies. I enjoy turning ideas into practical applications while continuously improving my technical skills.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <!-- Social Links with Placeholders -->
+          <div class="hero-socials">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-list">
+              <!-- GitHub Placeholder -->
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile (Placeholder: replace with your profile)">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <!-- LinkedIn Placeholder -->
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile (Placeholder: replace with your profile)">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- Email Placeholder -->
+              <a href="mailto:your.email@example.com" class="social-pill" title="Send Email (Placeholder: replace with your email)">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right / Developer Visual Card (Terminal / Code Block) -->
+        <div class="hero-visual reveal-item">
+          <div class="code-card">
+            <!-- Window Titlebar -->
+            <div class="code-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="control-dot dot-red"></span>
+                <span class="control-dot dot-yellow"></span>
+                <span class="control-dot dot-green"></span>
+              </div>
+              <div class="code-title">
+                <svg class="file-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>developer.js</span>
+              </div>
+              <button type="button" class="btn-copy-code" id="copyCodeBtn" aria-label="Copy developer code snippet" title="Copy snippet">
+                <svg class="icon-copy" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-tooltip">Copied!</span>
+              </button>
+            </div>
+
+            <!-- Code Content Body -->
+            <div class="code-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Nidhish"</span>,
+  <span class="code-property">degree</span>: <span class="code-string">"BCA (Computer Applications)"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Aspiring Software Developer"</span>,
+  <span class="code-property">primaryLanguages</span>: [
+    <span class="code-string">"Python"</span>, 
+    <span class="code-string">"Java"</span>, 
+    <span class="code-string">"JavaScript"</span>
+  ],
+  <span class="code-property">focusAreas</span>: [
+    <span class="code-string">"Practical Problem Solving"</span>,
+    <span class="code-string">"Clean Code Practices"</span>,
+    <span class="code-string">"Modern Web Interfaces"</span>
+  ],
+  <span class="code-property">openForInternships</span>: <span class="code-boolean">true</span>,
+  <span class="code-function">sayHello</span>: <span class="code-keyword">function</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Let's build something great together!"</span>;
+  }
+};</code></pre>
+            </div>
+
+            <!-- Terminal Status Footer -->
+            <div class="code-footer">
+              <div class="terminal-status">
+                <span class="status-active"></span>
+                <span>Ready for new challenges</span>
+              </div>
+              <span class="code-lang">JavaScript (ES6+)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 2: ABOUT ME
+         ====================================================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-item">
+          <p class="section-tag">// 01. ABOUT</p>
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <p class="section-subtitle">A little about my journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Introduction -->
+          <div class="about-intro reveal-item">
+            <p class="about-lead">
+              I am pursuing a <strong>Bachelor of Computer Applications (BCA)</strong>, dedicating my time to developing a rigorous foundation in programming, computer science principles, and practical software engineering.
+            </p>
+            <p class="about-text">
+              Rather than just learning syntax, I focus on understanding how software works under the hood—from object-oriented architecture and algorithm design to database structures and intuitive user interfaces. I actively apply what I study by crafting real-world projects, testing ideas, and continuously refining my code.
+            </p>
+            <p class="about-text">
+              I am driven by curiosity, consistency, and a strong work ethic. As I prepare for software development internships, my goal is to contribute to meaningful engineering teams, learn from seasoned mentors, and build software that provides real value.
+            </p>
+
+            <!-- Quick Profile Pill Badges -->
+            <div class="profile-meta-pills">
+              <div class="meta-pill">
+                <span class="pill-label">Focus:</span>
+                <span class="pill-val">Software Engineering</span>
+              </div>
+              <div class="meta-pill">
+                <span class="pill-label">Degree:</span>
+                <span class="pill-val">BCA</span>
+              </div>
+              <div class="meta-pill">
+                <span class="pill-label">Status:</span>
+                <span class="pill-val">Student & Builder</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Three Informative Cards -->
+          <div class="about-cards-container">
+            <!-- Card 1 -->
+            <div class="info-card reveal-item">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Continuous Learning</h3>
+                <p class="info-card-description">
+                  Exploring programming concepts and improving my technical abilities.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="info-card reveal-item">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Building Projects</h3>
+                <p class="info-card-description">
+                  Applying what I learn to practical applications and real-world problems.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="info-card reveal-item">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Future Goals</h3>
+                <p class="info-card-description">
+                  Preparing for software development opportunities and technical internships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 3: TECHNICAL SKILLS
+         ====================================================== -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-item">
+          <p class="section-tag">// 02. SKILLS</p>
+          <h2 class="section-title" id="skills-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I'm learning and working with.</p>
+        </div>
+
+        <!-- Skills Grid Organized by Categories -->
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper icon-programming">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming</h3>
+                <p class="category-subtitle">Core languages & algorithms</p>
+              </div>
+            </div>
+            
+            <div class="skills-items-list">
+              <!-- Python -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.48 2 5 3.5 5 5v2h7v1H4c-1.5 0-3 1.5-3 5s1.5 5 3 5h2v-2c0-1.5 1.5-3 3-3h7c1.5 0 2-1 2-2V5c0-1.5-1.5-3-6-3z"></path>
+                    <circle cx="8" cy="5" r="1" fill="currentColor"></circle>
+                    <path d="M12 22c5.52 0 7-1.5 7-3v-2h-7v-1h8c1.5 0 3-1.5 3-5s-1.5-5-3-5h-2v2c0 1.5-1.5 3-3 3h-7c-1.5 0-2 1-2 2v6c0 1.5 1.5 3 6 3z"></path>
+                    <circle cx="16" cy="19" r="1" fill="currentColor"></circle>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-desc">Scripting, Logic & Data Analysis</span>
+                </div>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-desc">Object-Oriented Programming (OOP)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper icon-frontend">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Frontend</h3>
+                <p class="category-subtitle">Interface & user experiences</p>
+              </div>
+            </div>
+            
+            <div class="skills-items-list">
+              <!-- HTML -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 3l1.5 16.5L12 22l6.5-2.5L20 3H4z"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-desc">Semantic Markup & Accessibility</span>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-desc">Flexbox, Grid, Animations & Responsive UI</span>
+                </div>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <path d="M8 17v-4a2 2 0 0 1 2-2"></path>
+                    <path d="M14 11v4a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2v-4"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-desc">ES6+, DOM Manipulation & Web APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Workflow -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper icon-tools">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools</h3>
+                <p class="category-subtitle">Development environment</p>
+              </div>
+            </div>
+            
+            <div class="skills-items-list">
+              <!-- Git -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="18" r="3"></circle>
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                    <line x1="6" y1="9" x2="6" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-desc">Version Control & Branch Management</span>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-desc">Repositories, Collaboration & Deployment</span>
+                </div>
+              </div>
+
+              <!-- Visual Studio Code -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">Visual Studio Code</span>
+                  <span class="skill-desc">Primary IDE, Extensions & Debugging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Database -->
+          <div class="skill-category-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-wrapper icon-database">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Database</h3>
+                <p class="category-subtitle">Data modeling & storage</p>
+              </div>
+            </div>
+            
+            <div class="skills-items-list">
+              <!-- SQL -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 7V4h16v3"></path>
+                    <path d="M9 20h6"></path>
+                    <path d="M12 4v16"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-desc">Relational Queries, Joins & Aggregations</span>
+                </div>
+              </div>
+
+              <!-- MySQL -->
+              <div class="skill-badge">
+                <div class="skill-badge-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5l3 3"></path>
+                  </svg>
+                </div>
+                <div class="skill-badge-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-desc">Schema Design, Tables & Constraints</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 4: FEATURED PROJECTS
+         ====================================================== -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-item">
+          <p class="section-tag">// 03. PROJECTS</p>
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+          <p class="section-subtitle">Some things I've built and explored.</p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Personal Expense Tracker -->
+          <article class="project-card reveal-item">
+            <!-- Project Visual Illustration / Mockup -->
+            <div class="project-mockup mockup-finance" aria-hidden="true">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">expense-tracker-ui</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-stat-box">
+                  <span class="mockup-stat-label">Total Expenses</span>
+                  <span class="mockup-stat-val">$1,420.50</span>
+                </div>
+                <div class="mockup-list-items">
+                  <div class="mockup-row">
+                    <span class="row-tag tag-purple">Tech Books</span>
+                    <span class="row-amount text-negative">-$45.00</span>
+                  </div>
+                  <div class="mockup-row">
+                    <span class="row-tag tag-blue">Cloud Server</span>
+                    <span class="row-amount text-negative">-$12.00</span>
+                  </div>
+                  <div class="mockup-row">
+                    <span class="row-tag tag-emerald">Stipend Credit</span>
+                    <span class="row-amount text-positive">+$350.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="status-badge status-in-progress">
+                  <span class="status-indicator"></span> In Progress
+                </span>
+                <span class="project-category">Web Application</span>
+              </div>
+
+              <h3 class="project-title">Personal Expense Tracker</h3>
+              
+              <p class="project-desc">
+                An application designed to help users record transactions, categorize expenses, and understand their spending habits.
+              </p>
+
+              <!-- Highlighted Key Features -->
+              <div class="project-features">
+                <p class="features-label">Key Features:</p>
+                <ul class="features-list">
+                  <li>Add and remove transactions dynamically.</li>
+                  <li>Categorize expenses with visual tags.</li>
+                  <li>Calculate total spending & balance overview.</li>
+                  <li>Display searchable transaction history.</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/your-username/expense-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <!-- Live Demo Placeholder -->
+                <a href="https://your-demo-url.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: AI Study Assistant -->
+          <article class="project-card reveal-item">
+            <!-- Project Visual Illustration / Mockup -->
+            <div class="project-mockup mockup-ai" aria-hidden="true">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">ai-assistant-terminal</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-chat-bubble user-bubble">
+                  <span>Explain QuickSort partition logic simply.</span>
+                </div>
+                <div class="mockup-chat-bubble ai-bubble">
+                  <span class="ai-sparkle">✨</span>
+                  <span>QuickSort picks a pivot, places smaller elements left, and larger elements right in O(n log n) average time.</span>
+                </div>
+                <div class="mockup-chips">
+                  <span class="chip">Generate Quiz</span>
+                  <span class="chip">Summarize Notes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="status-badge status-concept">
+                  <span class="status-indicator"></span> Concept / In Progress
+                </span>
+                <span class="project-category">AI / Educational Tool</span>
+              </div>
+
+              <h3 class="project-title">AI Study Assistant</h3>
+              
+              <p class="project-desc">
+                An AI-powered study assistant concept designed to help students understand study materials and generate useful revision resources.
+              </p>
+
+              <!-- Highlighted Key Features -->
+              <div class="project-features">
+                <p class="features-label">Potential Features:</p>
+                <ul class="features-list">
+                  <li>Summarize complex study materials.</li>
+                  <li>Generate smart revision questions & quizzes.</li>
+                  <li>Support conversational Q&amp;A interactions.</li>
+                  <li>Break down technical topics step-by-step.</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/your-username/ai-study-assistant" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <!-- Live Demo Placeholder -->
+                <a href="https://your-demo-url.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Preview</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Student Performance Dashboard -->
+          <article class="project-card reveal-item">
+            <!-- Project Visual Illustration / Mockup -->
+            <div class="project-mockup mockup-analytics" aria-hidden="true">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">performance-metrics</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-chart-bars">
+                  <div class="bar-col">
+                    <div class="bar-fill" style="height: 72%;"></div>
+                    <span class="bar-label">DSA</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-fill" style="height: 88%;"></div>
+                    <span class="bar-label">Java</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-fill" style="height: 94%;"></div>
+                    <span class="bar-label">Web</span>
+                  </div>
+                  <div class="bar-col">
+                    <div class="bar-fill" style="height: 80%;"></div>
+                    <span class="bar-label">DBMS</span>
+                  </div>
+                </div>
+                <div class="mockup-metric-footer">
+                  <span>Semester GPA: <strong>3.85 / 4.0</strong></span>
+                  <span class="badge-growth">▲ +8%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="status-badge status-planned">
+                  <span class="status-indicator"></span> Planned / In Exploration
+                </span>
+                <span class="project-category">Data Visualization</span>
+              </div>
+
+              <h3 class="project-title">Student Performance Dashboard</h3>
+              
+              <p class="project-desc">
+                A data visualization application designed to help students understand academic performance through charts and statistics.
+              </p>
+
+              <!-- Highlighted Key Features -->
+              <div class="project-features">
+                <p class="features-label">Potential Features:</p>
+                <ul class="features-list">
+                  <li>Calculate marks, credits, and semester averages.</li>
+                  <li>Display subject-wise performance charts.</li>
+                  <li>Visualize academic trends over time.</li>
+                  <li>Identify study focus areas using data insights.</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Streamlit</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-links">
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/your-username/student-performance-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <!-- Live Demo Placeholder -->
+                <a href="https://your-demo-url.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Demo Spec</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Honest Notice Banner -->
+        <div class="transparency-note reveal-item">
+          <svg class="note-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <p>
+            <strong>Transparency Notice:</strong> All projects above reflect active learning and exploration. Projects are honestly labeled with their actual development status, and external links are placeholders ready to be connected to live repositories.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 5: EDUCATION & LEARNING
+         ====================================================== -->
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-item">
+          <p class="section-tag">// 04. EDUCATION</p>
+          <h2 class="section-title" id="education-title">Education & Learning</h2>
+          <p class="section-subtitle">Academic foundations and continuous knowledge expansion.</p>
+        </div>
+
+        <div class="education-layout">
+          <!-- Main Degree Card -->
+          <div class="degree-card reveal-item">
+            <div class="degree-badge">Current Degree</div>
+            
+            <div class="degree-header">
+              <div class="degree-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="degree-title-block">
+                <h3 class="degree-name">Bachelor of Computer Applications (BCA)</h3>
+                <!-- Editable placeholders clearly marked -->
+                <p class="institution-name">
+                  <span class="placeholder-tag">[Add college / university name]</span>
+                </p>
+                <p class="graduation-year">
+                  Expected Graduation: <span class="placeholder-tag">[Add graduation year, e.g. 2026]</span>
+                </p>
+              </div>
+            </div>
+
+            <p class="degree-description">
+              Pursuing a comprehensive curriculum encompassing core computer science theory, algorithms, software design, and practical programming applications. Focused on translating classroom concepts into working software.
+            </p>
+
+            <!-- Coursework Grid -->
+            <div class="coursework-section">
+              <h4 class="subsection-title">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                Relevant Coursework
+              </h4>
+              <div class="coursework-chips">
+                <span class="course-chip">Data Structures &amp; Algorithms</span>
+                <span class="course-chip">Object-Oriented Programming (Java)</span>
+                <span class="course-chip">Database Management Systems (DBMS)</span>
+                <span class="course-chip">Web Technologies &amp; Architecture</span>
+                <span class="course-chip">Computer Networks</span>
+                <span class="course-chip">Operating Systems Principles</span>
+                <span class="course-chip">Software Engineering Methodologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Columns: Certifications & Learning Goals -->
+          <div class="learning-side-grid">
+            
+            <!-- Technical Courses & Certifications Card -->
+            <div class="learning-card reveal-item">
+              <div class="learning-card-header">
+                <div class="learning-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <h4 class="learning-card-title">Technical Courses & Certifications</h4>
+              </div>
+              <p class="learning-card-desc">
+                Supplementary coursework and certifications being pursued:
+              </p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <span class="item-status status-dot-active"></span>
+                  <div>
+                    <strong>Python Programming Masterclass</strong>
+                    <span class="item-subtext">[Add platform name or link, e.g. Coursera / FreeCodeCamp]</span>
+                  </div>
+                </li>
+                <li class="learning-item">
+                  <span class="item-status status-dot-active"></span>
+                  <div>
+                    <strong>Data Structures & Algorithms in Java</strong>
+                    <span class="item-subtext">[Add course or platform placeholder]</span>
+                  </div>
+                </li>
+                <li class="learning-item">
+                  <span class="item-status status-dot-active"></span>
+                  <div>
+                    <strong>Modern Web Development Fundamentals</strong>
+                    <span class="item-subtext">[Add certification placeholder]</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Active Learning Goals Card -->
+            <div class="learning-card reveal-item">
+              <div class="learning-card-header">
+                <div class="learning-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <h4 class="learning-card-title">Current Learning Goals</h4>
+              </div>
+              <p class="learning-card-desc">
+                Key technical milestones targeted for the coming months:
+              </p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <span class="item-bullet">🎯</span>
+                  <div>
+                    <strong>DSA Problem Solving:</strong>
+                    <span class="item-subtext">Building consistency in LeetCode/HackerRank coding challenges.</span>
+                  </div>
+                </li>
+                <li class="learning-item">
+                  <span class="item-bullet">🎯</span>
+                  <div>
+                    <strong>Full-Stack Architecture:</strong>
+                    <span class="item-subtext">Connecting frontend interfaces to relational database backends.</span>
+                  </div>
+                </li>
+                <li class="learning-item">
+                  <span class="item-bullet">🎯</span>
+                  <div>
+                    <strong>Internship Preparedness:</strong>
+                    <span class="item-subtext">Mastering technical interview fundamentals and collaborative Git workflows.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION 6: CONTACT
+         ====================================================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-item">
+          <p class="section-tag">// 05. CONTACT</p>
+          <h2 class="section-title" id="contact-title">Let's Build Something Together</h2>
+          <p class="section-subtitle">I'm always interested in learning, building projects, and connecting with people in technology.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Cards & Social Channels -->
+          <div class="contact-info-col reveal-item">
+            <h3 class="contact-col-title">Get in Touch Directly</h3>
+            <p class="contact-intro">
+              Whether you are looking for an enthusiastic software development intern, have a question about my projects, or just want to discuss technology—feel free to drop me a note!
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email Card -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Email</span>
+                  <a href="mailto:your.email@example.com" class="method-value" id="emailContactLink">
+                    your.email@example.com
+                  </a>
+                  <span class="placeholder-inline">(Replace with your active email)</span>
+                </div>
+                <button type="button" class="btn-copy-email" id="copyEmailBtn" aria-label="Copy email address" title="Copy email">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-tooltip">Copied!</span>
+                </button>
+              </div>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact-method-card card-link">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">github.com/your-username</span>
+                  <span class="placeholder-inline">(Check out my repositories)</span>
+                </div>
+                <div class="external-arrow" aria-hidden="true">↗</div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact-method-card card-link">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">linkedin.com/in/your-profile</span>
+                  <span class="placeholder-inline">(Let's connect professionally)</span>
+                </div>
+                <div class="external-arrow" aria-hidden="true">↗</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form with Client-Side Validation -->
+          <div class="contact-form-col reveal-item">
+            <div class="form-container-card">
+              <h3 class="form-title">Send a Message</h3>
+              
+              <!-- Honest Backend Explanation Notice -->
+              <div class="form-backend-notice" role="note">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <p>
+                  <strong>Setup Note:</strong> This static form uses client-side validation and generates a pre-formatted email draft. To receive messages automatically without opening an email client, connect a free service like <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a> or <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer">Web3Forms</a>.
+                </p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="senderName" class="form-label">
+                    Your Name <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="text" 
+                           id="senderName" 
+                           name="name" 
+                           class="form-input" 
+                           placeholder="Alex Morgan" 
+                           required 
+                           aria-required="true"
+                           autocomplete="name">
+                  </div>
+                  <span class="error-message" id="nameError" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">
+                    Your Email <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="email" 
+                           id="senderEmail" 
+                           name="email" 
+                           class="form-input" 
+                           placeholder="alex@company.com" 
+                           required 
+                           aria-required="true"
+                           autocomplete="email">
+                  </div>
+                  <span class="error-message" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject Field (Optional) -->
+                <div class="form-group">
+                  <label for="messageSubject" class="form-label">
+                    Subject <span class="optional-label">(Optional)</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <input type="text" 
+                           id="messageSubject" 
+                           name="subject" 
+                           class="form-input" 
+                           placeholder="Internship Inquiry / Project Discussion">
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">
+                    Message <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <textarea id="senderMessage" 
+                              name="message" 
+                              rows="5" 
+                              class="form-textarea" 
+                              placeholder="Hi Nidhish, I saw your portfolio and would like to connect regarding an internship opportunity..." 
+                              required 
+                              aria-required="true"></textarea>
+                  </div>
+                  <span class="error-message" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <!-- Submission Status Feedback -->
+                <div class="form-status-alert" id="formStatusAlert" role="alert" style="display: none;"></div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg class="icon-send" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Footer Logo -->
+        <a href="#home" class="logo" aria-label="Nidhish Developer Portfolio Home">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">NIDHISH</span>
+          <span class="logo-accent">.DEV</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <!-- Professional Tagline -->
+        <p class="footer-tagline">
+          Designed and built with curiosity and code.
+        </p>
+
+        <!-- Social Channels -->
+        <div class="footer-socials">
+          <!-- GitHub Placeholder -->
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <!-- LinkedIn Placeholder -->
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <!-- Email Placeholder -->
+          <a href="mailto:your.email@example.com" class="footer-social-icon" aria-label="Email Nidhish">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <!-- Copyright with Dynamic Year -->
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Nidhish. All rights reserved.
+        </p>
+        <p class="footer-notes">
+          Built for Software Development Internship Applications.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       BACK TO TOP BUTTON
+       ======================================================== -->
+  <button type="button" 
+          class="back-to-top" 
+          id="backToTopBtn" 
+          aria-label="Scroll back to top of page" 
+          title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
