@@ -246,6 +246,7 @@
       const codeSnippet = `const developer = {
   name: "Nidhish Devadiga",
   github: "codewithdizzzy",
+  linkedin: "nidhish-devadiga-0632092b5",
   degree: "BCA (Computer Applications)",
   role: "Aspiring Software Developer",
   primaryLanguages: ["Python", "Java", "JavaScript"],
