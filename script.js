@@ -244,7 +244,8 @@
   if (copyCodeBtn) {
     copyCodeBtn.addEventListener('click', function () {
       const codeSnippet = `const developer = {
-  name: "Nidhish",
+  name: "Nidhish Devadiga",
+  github: "codewithdizzzy",
   degree: "BCA (Computer Applications)",
   role: "Aspiring Software Developer",
   primaryLanguages: ["Python", "Java", "JavaScript"],
