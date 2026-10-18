@@ -1576,6 +1576,21 @@ button {
   font-family: var(--font-mono);
 }
 
+.institution-text {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.graduation-badge {
+  display: inline-block;
+  background-color: rgba(139, 92, 246, 0.15);
+  color: var(--accent-purple-light);
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
 .placeholder-tag {
   display: inline-block;
   background-color: rgba(139, 92, 246, 0.12);

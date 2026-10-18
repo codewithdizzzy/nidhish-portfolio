@@ -248,6 +248,8 @@
   github: "codewithdizzzy",
   linkedin: "nidhish-devadiga-0632092b5",
   degree: "BCA (Computer Applications)",
+  college: "KPB Hinduja College of Commerce",
+  graduation: 2027,
   role: "Aspiring Software Developer",
   primaryLanguages: ["Python", "Java", "JavaScript"],
   focusAreas: ["Practical Problem Solving", "Clean Code Practices", "Modern Web Interfaces"],
@@ -411,8 +413,8 @@
       const subject = messageSubjectInput ? messageSubjectInput.value.trim() : '';
       const message = senderMessageInput.value.trim();
 
-      // Recipient placeholder email (user can change this in index.html/script.js)
-      const recipientEmail = 'your.email@example.com';
+      // Recipient email for contact form submission
+      const recipientEmail = 'devadiganidhish26@gmail.com';
       const emailSubject = subject || `Portfolio Inquiry from ${name}`;
       const emailBody = `Hi Nidhish,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
 

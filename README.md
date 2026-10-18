@@ -122,11 +122,11 @@ git push -u origin main
 
 Replace the following placeholder values in `index.html` with your actual personal details:
 
-- [ ] **College / Institution Name:** Search for `[Add college / university name]` in `index.html` (Education section) and replace with your university or institute.
-- [ ] **Expected Graduation Year:** Search for `[Add graduation year, e.g. 2026]` and update with your graduation year.
+- [x] **College / Institution Name:** Configured to `KPB Hinduja College of Commerce`
+- [x] **Expected Graduation Year:** Configured to `2027`
 - [x] **GitHub Profile:** Configured to `https://github.com/codewithdizzzy`
 - [x] **LinkedIn Profile:** Configured to `https://www.linkedin.com/in/nidhish-devadiga-0632092b5`
-- [ ] **Active Email:** Replace `your.email@example.com` with your active email address in the hero, contact cards, and footer.
+- [x] **Active Email:** Configured to `devadiganidhish26@gmail.com`
 - [ ] **Project Repositories:** Once created, ensure your project repos match (e.g. `expense-tracker`, `ai-study-assistant`, `student-performance-dashboard`).
 - [ ] **Open Graph Metadata:** Update the `og:url` and `og:image` meta tags at the top of `index.html` once deployed.
 - [ ] **Contact Form Backend (Optional):** If you wish to receive form emails directly into your inbox without opening the email client:
